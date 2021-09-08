@@ -1,0 +1,82 @@
+/* code Commun */
+	
+
+	.listeEquipe{
+
+		display: flex;
+
+		flex-direction: column;
+
+		align-items: flex-start;
+
+		width: 50%;
+		
+		font-size: 15px;
+		
+		margin : 0 16px 16px 0;
+
+	}
+/* Team page */
+	.directorText{
+	font-family: 'Roboto-Regu';
+	text-align: center;
+}
+	.descriptionText{
+		font-family: 'Roboto-Regu';
+		font-size : 14px;
+		margin-left : 25px;
+		width: 75%;
+		
+}
+statusText{
+	font-family: 'Roboto-Regu';
+	font-size : 15px;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+  	text-decoration-color: rgb(143,33,66);
+}
+
+
+
+/* Pour la partie collaborateur */
+
+	/* Pour la sous-partie institution */
+
+	.sousBoitePartenaire{
+
+		display: flex;
+		flex-direction: row;
+
+		justify-content: flex-end;
+		align-items: center;
+		
+		margin: 5px;
+		padding: 5px;
+
+	}
+
+	.boiteTexte{
+		margin-left : 15px;
+		width: 75%;
+
+	}
+
+	.truc{
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	/* Pour la sous-partie chercheurs */
+
+	.lienTitre{
+		color: grey;
+		text-decoration: none;
+		font-size: x-large;
+	}
+
+	.lienTitre:hover{
+		color: rgb(143,33,66);
+		text-decoration: underline;
+	}
+
+	

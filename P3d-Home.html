@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+    	<meta charset="utf-8" />
+
+        <link rel="stylesheet" href="code/CSS/styleUniversel.css">
+
+        <link rel="stylesheet" href="code/CSS/styleHome.css">
+
+        <link rel="icon" type="image/png" href="document/photo/logoP3D.png">
+
+        <title>P3δ - Home</title>
+
+    </head>
+
+
+    <body>
+
+        <header>
+
+               <div id="teteDroite">
+                     <a href="P3d-Home.html"><div><img class="photo" src="document/photo/logoP3D.png" height="45" width="45"></div></a>
+                    <div><h1 class="teteTitre">P3δ</h1></div>
+                </div>
+
+                <div id="teteGauche">
+                    <div class="sousBoiteGauche"><h3><a href="P3d-Home.html" class="lien"><center>Home</center></a></h3></div>
+                    <div class="sousBoiteGauche"><h3><a href="P3d-Team.html" class="lien"><center>Team</center></a></h3></div>
+                    <div class="sousBoiteGauche"><h3><a href="P3d-Download.html" class="lien"><center>Download</center></a></h3></div>
+                    <div class="sousBoiteGauche"><h3><a href="P3d-Collaborators.html" class="lien"><center>Collaborators</center></a></h3></div>
+                    <div class="sousBoiteGauche"><h3><a href="P3d-Publications.html" class="lien"><center>Publications</center></a></h3></div>                  
+                    <div class="sousBoiteGauche"><h3><a href="P3d-Videos.html" class="lien"><center> Videos </center></a></h3></div>
+                </div>
+
+        </header>
+
+        <section>
+
+            <article>
+
+                <div class="corpsTitre">
+                    <h2 class="sectionTitre">Homepage of the P3δ software</h2>
+                </div>
+
+                <h2  style="font-size: 32px">Partial pole placement via delay action</h2> 
+
+                <a href="https://www.l2s.centralesupelec.fr/u/boussaada-islam/" class="lienIPSA"> Islam Boussaada<br> IPSA & University Paris-Saclay, CNRS - CentraleSupélec, Inria Saclay<br> Laboratory of Signals and Systems</a>
+              
+
+            </article>
+
+
+             
+            <article>
+
+                <p></p>
+
+                <h3>Context</h3>
+
+                <p>Control systems often operate in the presence of delays, primarily due to the time taken to acquire the information needed for decision-making, to create control decisions and to execute these decisions.</p>
+
+                <p>Commonly, such a time-delay induces desynchronizing and/or destabilizing effects on the dynamics. However, some recent studies have emphasized that the delay may have a stabilizing effect in the control design.</p>
+
+                <p></p>
+
+                <h3>Description</h3>
+                <p>P3δ is a <italicText>Python</italicText> implementation of recent methods for the stability analysis and stabilization of linear time-delay systems exploiting the delay action. Its control design strategy is based on properties of the spectral distribution of the time-delay system.</p>
+
+                <p>  The idea to design such an implementation dates back to the first publications on the topic where the characterization of multiple spectral values of a time-delay system in terms of confluent Vandermonde and Birkhoff matrices, and  their  structural properties, enabled a constructive alternative to the Pólya and Szegő count for the maximal admissible multiplicity [<a href="https://hal-centralesupelec.archives-ouvertes.fr/hal-01429961" style="color: rgb(143,33,66)">1</a>, <a href="https://hal-centralesupelec.archives-ouvertes.fr/hal-01425757" style="color: rgb(143,33,66)">2</a>].</p>
+
+                <p>The multiplicity of a spectral value itself is not important as such, but its connection with the dominancy of this spectral value is a meaningful tool for control synthesis. Indeed, two main properties called respectively the multiplicity-induced-dominancy (MID) and the coexisting-real-roots-induced-dominancy (CRRID) were introduced, respectively in [<a href="https://hal.archives-ouvertes.fr/hal-02421253" style="color: rgb(143,33,66)">3</a>, <a href="https://hal.archives-ouvertes.fr/hal-02479909" style="color: rgb(143,33,66)">4</a>] and [<a href="https://hal-centralesupelec.archives-ouvertes.fr/hal-01969066" style="color: rgb(143,33,66)">5</a>, <a href="https://hal.archives-ouvertes.fr/hal-02476403" style="color: rgb(143,33,66)">6</a>], and applied, for instance, in the control of active vibrating flexible structures.</p>
+
+
+                 
+
+                <p>The symbolic/numeric procedures generating P3δ can be easily converted to any computer algebra systems such as <italicText>Maplesoft</italicText>, <italicText>Mathematica</italicText>, <italicText>Matlab</italicText>,<italicText> Octave</italicText> ... </p>
+
+                <p></p>
+                
+                  <h3>Acknowledgments</h3>
+                 <p>This project was carried thanks to the financial support of a public grant overseen by the French National Research Agency (ANR) as part of the ''Investissement d'Avenir'' program, through the ''iCODE Institute project'', funded by the IDEX Paris-Saclay, two PHC (Partenariat Huber Curien) grants BALATON 2018 (No. 40502NM) and BRANCUSI 2017 (No. 38390ZL), and a grant from Inria Saclay (2020).</p>
+     
+                <p>This software was implemented in the context of the internship of six rigorous and efficient undergraduate students from IPSA and the one year brilliant postdoctoral fellow, which I had the chance to supervise during 2019-2020. </p>
+
+                <p>Last but not least, this work is done thanks to the several years of fruitful collaborations with generous collaborators who accepted to share their expertise and knowledge in the field of control of dynamical systems and to the new collaboration with the CYB’AIR Student Association at IPSA aiming at acquiring, sharing skills and experience on professional software.</p>
+
+               
+
+                <p></p>
+
+                <h3>User guide</h3>
+
+                <p>The package and its use are described in the manual. The user can find additional illustrative examples in it.<br>
+                The user guide can be found <a href="document/PDF/UserGuide.pdf" style="color: blue"> here</a>.</p>
+
+                <p></p>
+                
+               
+
+                <h3>Tutorial</h3>
+
+                <p>Here are two short videos that we prepared for you to show you how the software works</p>
+
+                <p>The first one is on a generic MID use:</p>
+
+                <p>
+                    <center><video src="document/video/videoMIDGeneric.mp4"  width="800px" controls></video></center>
+                </p>
+
+                <p>The second one is on the sensitivity setting on the P3δ software:</p>
+
+                <p>
+                    <center><video src="document/video/videoSensitivityTimeSim.mp4"  width="800px" controls></video></center>
+                </p>
+
+                <p></p>
+
+            </article>
+
+            <article class="zonePhotoColonne">
+
+                <div class="zonePhotoLigne"> 
+                    <div class="boitePhoto"><center><a href="https://www.universite-paris-saclay.fr/en"><img src="document/photo/Collaborators/UPSA.jpg"  height="120" width="150"></a></center></div>
+                    <div class="boitePhoto"><a href="http://www.cnrs.fr/en"><img src="document/photo/Collaborators/cnrs.jfif"  height="100" width="200"></a></div>
+                    <div class="boitePhoto"><a href="https://www.inria.fr/en"><img src="document/photo/Collaborators/Inria.png"  height="100" width="200"></a></div>
+                    <div class="boitePhoto"><a href="https://www.centralesupelec.fr/en"><img src="document/photo/Collaborators/SC.jpg"  height="100" width="200"></a></div>
+                </div>
+
+                <div class="zonePhotoLigne"> 
+                    <div class="boitePhoto"><a href="https://icode-institute.fr/en"><img src="document/photo/Collaborators/iCODE-INST.jpg"  height="100" width="200"></a></div>
+                    <div class="boitePhoto"><a href="https://www.l2s.centralesupelec.fr/en/"><img src="document/photo/Collaborators/LogoL2S.jpg"  height="90" width="220"></a></div>
+                    <div class="boitePhoto"><a href="https://www.campusfrance.org/en"><img src="document/photo/Collaborators/CF.png"  height="100" width="200"></a></div>
+                </div>
+
+                <div class="zonePhotoLigne"> 
+                    <div class="boitePhoto"><a href="https://www.ipsa.fr/en/"><img src="document/photo/Collaborators/IPSAV2.png"  height="100" width="200"></a></div>
+                    <div class="boitePhoto"><a href="https://www.facebook.com/CYBAIRipsa"><center><img src="document/photo/Collaborators/cyber.png"  height="100" width="125"></a></center></div>          
+                    <div class="boitePhoto"><a href="https://www.ionis-group.com/en/"><center><img src="document/photo/Collaborators/ionis.png"  height="120" width="175"></a></center></div>
+                </div>
+      
+            </article>
+
+        </section>
+
+ 
+ 		<footer>
+
+            <div class="boiteGauche"><p>Last software update: 03/12/2020</p></div>
+            <div class="contactBox"><p>Contact us at : p3delta@inria.fr</p></div>
+            <div class="boiteDroite"><p>Last website update: 03/12/2020</p></div>
+
+        </footer>
+
+    </body>
+<a href="http://www.mon-compteur.fr"><img src="http://www.mon-compteur.fr/html_c01genv2-228254-2" border="0" /></a>
+
+</html>
+
